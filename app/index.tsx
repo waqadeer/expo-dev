@@ -1,8 +1,8 @@
 import React from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
 import { WebView } from "react-native-webview";
 
-export default function AppLayout() {
+export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <WebView

@@ -119,7 +119,7 @@ export const getDynamicAppConfig = (
     bundleIdentifier: `${BUNDLE_IDENTIFIER}.dev`,
     packageName: `${PACKAGE_NAME}.dev`,
     icon: "./assets/images/icons/iOS-Dev.png",
-    adaptiveIcon: "./assets/images/icons/Android-Dev.png",
+    adaptiveIcon: "./assets/images/icons/Android-Dev.svg",
     scheme: `${SCHEME}-dev`,
   };
 };
