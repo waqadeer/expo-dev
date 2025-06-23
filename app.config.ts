@@ -2,14 +2,14 @@ import { ConfigContext, ExpoConfig } from "expo/config";
 
 // Replace these with your EAS project ID and project slug.
 // You can find them at https://expo.dev/accounts/[account]/projects/[project].
-const EAS_PROJECT_ID = "4a40e811-db03-4dfb-bc1d-c97b8edc5a78";
-const PROJECT_SLUG = "with-envs";
-const OWNER = "betoatexpo";
+const EAS_PROJECT_ID = "2ffd5788-491b-451f-8005-7e8e281fa515";
+const PROJECT_SLUG = "relief-compass-dev";
+const OWNER = "wisam90";
 
 // App production config
-const APP_NAME = "App Name";
-const BUNDLE_IDENTIFIER = "com.company.appname";
-const PACKAGE_NAME = "com.company.appname";
+const APP_NAME = "Relief Compass";
+const BUNDLE_IDENTIFIER = "com.coreresponse.reliefcompass";
+const PACKAGE_NAME = "com.coreresponse.reliefcompass";
 const ICON = "./assets/images/icons/iOS-Prod.png";
 const ADAPTIVE_ICON = "./assets/images/icons/Android-Prod.png";
 const SCHEME = "app-scheme";
@@ -21,6 +21,15 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       (process.env.APP_ENV as "development" | "preview" | "production") ||
         "development"
     );
+
+  console.log("📦 Using config:", {
+    name,
+    bundleIdentifier,
+    icon,
+    adaptiveIcon,
+    packageName,
+    scheme,
+  });
 
   return {
     ...config,
